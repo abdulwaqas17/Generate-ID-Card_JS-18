@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serifsans-serif;
+
+}
+
+/* dynamic classes  */
+:root {
+
+    --color1 : rgb(255, 218, 7);
+    --color2 : rgb(13, 47, 196);
+
+}
+
+/* utlility classes  */
+h2,h1,h3,h4 {
+
+    font-weight: 550;
+    font-family:"Poppins", sans-serif;;
+
+}
+
+/* p{
+
+    font-family:  "Roboto", serif;
+} */
+
+h4{
+    font-size: 1rem;
+    padding-top: 3px;
+}
+
+.flex {
+
+    display: flex;
+
+}
+
+.blue {
+
+    color: var(--color2);
+}
+
+
+
+/* styling for header is here  */
+header {
+
+    background-color: var(--color1);
+    /* justify-content : center; */
+    padding-left: 220px;
+    gap: 200px;
+    padding-block: 40px 15px;
+
+}
+
+.logo {
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--color2);
+
+}
+
+.top-detail {
+
+    text-align : center;
+
+}
+
+.heading3 {
+
+    padding-block: 15px;
+}
+
+.layerForHeader{
+
+    height: 16px;
+    background-color: white;
+    border-bottom: 8px solid var(--color2);
+}
+
+
+
+
+
+
+
+/* stying for main is here  */
+main{
+
+    padding:20px 50px;
+    border-bottom: 50px solid var(--color2);
+
+}
+
+
+
+form input {
+
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+
+}
+
+/* label {
+
+    display: block;
+    padding-bottom: 20px;
+
+} */
+
+table{
+
+    width: 100%;
+    
+}
+
+td{
+
+    padding-bottom: 20px;
+}
+
+/* table,tr,td {
+
+    border: 1px solid black;
+} */
+
+.labelTd{
+
+    width: 13%;
+
+}
+
+
+
+/* styling for .birth-gender is here  */
+.birth-gender{
+
+    gap: 50px;
+    
+}
+
+.birth-gender input{
+
+    width: 500px;
+
+}
+
+.radio input {
+
+    width: 30px;
+    
+}
+
+form input:focus{
+
+    border:none;
+    border-bottom: 1px solid black;
+    /* color: green; */
+
+}
+
+/* styling for BOTH fieldset is here  */ 
+fieldset{
+
+    margin-top: 50px;
+    padding: 50px;
+    border: 2px dashed rgb(179, 179, 179);
+
+}
+
+legend {
+
+    padding-inline: 5px;
+    font-size: 1.5rem;
+
+}
+
+.fildsetTop {
+
+    gap: 30px;
+}
+
+.fildsetTop>div {
+
+    width: 50%;
+
+}
+
+.fildsetTop input {
+
+    width: 83%;
+
+}
+
+.fildsetbottom input{
+
+    width: calc(100% - 100px);
+    padding-top: 40px;
+}
+
+
+
+/* styling for general-information is here  */
+.general-information{
+
+    padding-top: 50px;
+
+}
+
+.general-information input{
+
+    width: calc(100% - 130px);
+    margin-bottom: 10px;
+}
+
+
+.radio input {
+
+    width: 30px;
+    cursor: pointer;
+    
+}
+
+
+
+
+/* styling for decleration is here  */
+.decleration h2 {
+
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.decleration p {
+
+    font-size: 0.94rem;
+    line-height: 1.3rem;
+
+}
+
+
+
+/* styling for signatures is here  */
+.signatures {
+
+    justify-content: space-between;
+    padding-inline: 50px;
+
+}
+
+.signatures div {
+
+    width: 24%;
+    border-top: 1px solid black;
+    margin-top: 50px;
+    padding-block: 25px;
+
+}
+
+.signatures div p {
+
+    text-align: center;
+
+}
