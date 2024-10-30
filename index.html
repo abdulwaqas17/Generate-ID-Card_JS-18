@@ -47,14 +47,14 @@
                     <tr>
                         
                         <td class="labelTd"><label for="" class="required">Student's Name :</td></label></td>
-                        <td><input type="text"></td>
+                        <td><input type="text" id="stdName"></td>
 
                     </tr>
 
                     <tr>
 
                         <td class="labelTd"><label for="" class="required">Father's Name :</td></label></td>
-                        <td><input type="text"></td>
+                        <td><input type="text" id="stdFatherName" ></td>
 
                     </tr>
 
@@ -195,14 +195,14 @@
                         <td>
 
                             <label for="" class="required">Class :</label>
-                            <input type="text">
+                            <input type="text" id="stdClass" >
 
                         </td>
 
                         <td>
 
                             <label for="" class="required">Student ID :</label>
-                            <input type="text">
+                            <input type="text" id="stdId" >
 
                         </td>
 
@@ -213,7 +213,7 @@
                         <td>
 
                             <label for="" class="required">Section :</label>
-                            <input type="text">
+                            <input type="text" id="stdSection" required>
 
                         </td>
 
@@ -239,11 +239,18 @@
 
                     </tr>
 
+                    <tr>
+                        <td>
+                            <label for="" class="required">Upload Picture : </label>
+                            <input type="file" id="stdPicture" >
+                        </td>
+                    </tr>
+
                 </table>
 
                 <!-- buttons is here  -->
-                <button class="btn">Submit</button>
-                <button class="btn">Generate ID Card</button>
+                <button class="btn" type="button" onclick="submitData()">Submit</button>
+                <button class="btn" type="button" onclick="showCard()">Generate ID Card</button>
 
             </form>
 
@@ -284,7 +291,7 @@
 
 
     <!-- id-card is here  -->
-    <div class="id-card flex">
+    <div class="id-card flex hidden">
 
         <!-- card-front is here  -->
         <div class="card-front">
@@ -303,7 +310,7 @@
             <div class="card-front-mid flex">
 
                 <!-- card-img is here  -->
-                <div class="card-front-img">
+                <div class="card-front-img" id="showStdPicture">
 
                     <img src="" alt="">
 
@@ -319,35 +326,35 @@
                     <tr>
 
                         <td><p>Student Name :</p></td>
-                        <td><p>Muhammad Waqas</p></td>
+                        <td><p id="showStdName">Muhammad Waqas</p></td>
 
                     </tr>
 
                     <tr>
 
                         <td><p>Father Name : </p></td>
-                        <td><p>Abdul Majid</p></td>
+                        <td><p id="showStdFatherName">Abdul Majid</p></td>
 
                     </tr>
 
                     <tr>
 
                         <td><p>Student ID : </p></td>
-                        <td><p>792535</p></td>
+                        <td><p  id="showStdId">792535</p></td>
 
                     </tr>
 
                     <tr>
 
-                        <td><p>Course Name : </p></td>
-                        <td><p>Web App Development</p></td>
+                        <td><p>Class : </p></td>
+                        <td><p  id="showStdClass">Web App Development</p></td>
 
                     </tr>
 
                     <tr>
 
-                        <td><p>Batch : </p></td>
-                        <td><p>12</p></td>
+                        <td><p>Section : </p></td>
+                        <td><p  id="showStdSection">12</p></td>
 
                     </tr>
 

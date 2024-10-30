@@ -7,11 +7,11 @@
     font-family: "Roboto", serifsans-serif;
 
 }
-
+/* 
 body{
 
     padding-bottom: 80px;
-}
+} */
 
 /* dynamic classes  */
 :root {
@@ -180,6 +180,7 @@ td{
 form input:focus{
 
     border:none;
+    outline: none;
     border-bottom: 1px solid black;
     /* color: green; */
 
@@ -245,6 +246,11 @@ legend {
     width: 30px;
     cursor: pointer;
     
+}
+
+#stdPicture{
+
+    border: none;
 }
 
 
@@ -326,10 +332,23 @@ legend {
 
 
 /* styling for id-card is here  */
+.hidden {
+
+    display: none;
+
+}
+
+.show {
+
+    display: flex;
+
+}
+
+
 .id-card {
 
     justify-content: space-around;
-    margin-top: 100px;
+    margin-block: 100px 20px;
 }
 
 
@@ -373,16 +392,23 @@ legend {
 
 .card-front-img{
 
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-color: var(--color1);
+    border: 8px solid var(--color1);
+    /* background-color: var(--color1); */
+    background-image: url(./waqas44.jfif);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    
 
 }
 
 .card-front-details table{
 
-    padding-left: 70px;
+    width: 65%;
+    margin: auto;
 
 }
 
