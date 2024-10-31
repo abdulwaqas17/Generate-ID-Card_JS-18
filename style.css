@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", serifsans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serifsans-serif;
 }
 /* 
 body{
@@ -15,18 +13,17 @@ body{
 
 /* dynamic classes  */
 :root {
-
-    --color1 : rgb(255, 218, 7);
-    --color2 : rgb(13, 47, 196);
-
+  --color1: rgb(255, 218, 7);
+  --color2: rgb(13, 47, 196);
 }
 
 /* utlility classes  */
-h2,h1,h3,h4 {
-
-    font-weight: 550;
-    font-family:"Poppins", sans-serif;;
-
+h2,
+h1,
+h3,
+h4 {
+  font-weight: 550;
+  font-family: "Poppins", sans-serif;
 }
 
 /* p{
@@ -34,97 +31,69 @@ h2,h1,h3,h4 {
     font-family:  "Roboto", serif;
 } */
 
-h4{
-    font-size: 1rem;
-    padding-top: 3px;
+h4 {
+  font-size: 1rem;
+  padding-top: 3px;
 }
 
 .flex {
-
-    display: flex;
-
+  display: flex;
 }
 
 .yellow {
-
-    color: var(--color1);
+  color: var(--color1);
 }
 
 .blue {
-
-    color: var(--color2);
+  color: var(--color2);
 }
 
-.required::after{
-
-    content: ' *';
-    color: rgb(255, 115, 0);
-    font-size: 1.2rem;
-
+.required::after {
+  content: " *";
+  color: rgb(255, 115, 0);
+  font-size: 1.2rem;
 }
-
-
 
 /* styling for header is here  */
 header {
-
-    background-color: var(--color1);
-    /* justify-content : center; */
-    padding-left: 220px;
-    gap: 200px;
-    padding-block: 40px 15px;
-
+  background-color: var(--color1);
+  /* justify-content : center; */
+  padding-left: 220px;
+  gap: 200px;
+  padding-block: 40px 15px;
 }
 
 .logo {
-
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: var(--color2);
-
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--color2);
 }
 
 .top-detail {
-
-    text-align : center;
-
+  text-align: center;
 }
 
 .heading3 {
-
-    padding-block: 15px;
+  padding-block: 15px;
 }
 
-.layerForHeader{
-
-    height: 16px;
-    background-color: white;
-    border-bottom: 8px solid var(--color2);
+.layerForHeader {
+  height: 16px;
+  background-color: white;
+  border-bottom: 8px solid var(--color2);
 }
-
-
-
-
-
-
 
 /* stying for main is here  */
-main{
-
-    padding:20px 50px;
-    border-bottom: 50px solid var(--color2);
-
+main {
+  padding: 20px 50px;
+  border-bottom: 50px solid var(--color2);
 }
 
-
-
 form input {
-
-    border: none;
-    border-bottom: 1px solid black;
-    width: 100%;
-
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 
 /* label {
@@ -134,15 +103,12 @@ form input {
 
 } */
 
-table{
-
-    width: 100%;
-    
+table {
+  width: 100%;
 }
 
-td{
-
-    padding-bottom: 20px;
+td {
+  padding-bottom: 20px;
 }
 
 /* table,tr,td {
@@ -150,342 +116,239 @@ td{
     border: 1px solid black;
 } */
 
-.labelTd{
-
-    width: 11%;
-
+.labelTd {
+  width: 11%;
 }
-
-
 
 /* styling for .birth-gender is here  */
-.birth-gender{
-
-    gap: 50px;
-    
+.birth-gender {
+  gap: 50px;
 }
 
-.birth-gender input{
-
-    width: 500px;
-
+.birth-gender input {
+  width: 500px;
 }
 
 .radio input {
-
-    width: 30px;
-    
+  width: 30px;
 }
 
-form input:focus{
-
-    border:none;
-    outline: none;
-    border-bottom: 1px solid black;
-    /* color: green; */
-
+form input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  /* color: green; */
 }
 
-/* styling for BOTH fieldset is here  */ 
-fieldset{
-
-    margin-top: 50px;
-    padding: 50px;
-    border: 2px dashed rgb(179, 179, 179);
-
+/* styling for BOTH fieldset is here  */
+fieldset {
+  margin-top: 50px;
+  padding: 50px;
+  border: 2px dashed rgb(179, 179, 179);
 }
 
 legend {
-
-    padding-inline: 5px;
-    font-size: 1.5rem;
-
+  padding-inline: 5px;
+  font-size: 1.5rem;
 }
 
 .fildsetTop {
-
-    gap: 30px;
+  gap: 30px;
 }
 
-.fildsetTop>div {
-
-    width: 50%;
-
+.fildsetTop > div {
+  width: 50%;
 }
 
 .fildsetTop input {
-
-    width: 83%;
-
+  width: 83%;
 }
 
-.fildsetbottom input{
-
-    width: calc(100% - 100px);
-    padding-top: 40px;
+.fildsetbottom input {
+  width: calc(100% - 100px);
+  padding-top: 40px;
 }
-
-
 
 /* styling for general-information is here  */
-.general-information{
-
-    padding-top: 50px;
-
+.general-information {
+  padding-top: 50px;
 }
 
-.general-information input{
-
-    width: calc(100% - 130px);
-    margin-bottom: 10px;
+.general-information input {
+  width: calc(100% - 130px);
+  margin-bottom: 10px;
 }
-
 
 .radio input {
-
-    width: 30px;
-    cursor: pointer;
-    
+  width: 30px;
+  cursor: pointer;
 }
 
-#stdPicture{
-
-    border: none;
+#stdPicture {
+  border: none;
 }
-
 
 /* styling for buttons is here  */
 .btn {
-
-    width: 100%;
-    display: block;
-    margin-bottom: 25px;
-    padding-block: 12px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    background-color: var(--color2);
-    border-radius: 5px;
-    border: 2px solid var(--color1);
-    color: white;
-    transition: 0.2s ease-in;
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
+  padding-block: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: var(--color2);
+  border-radius: 5px;
+  border: 2px solid var(--color1);
+  color: white;
+  transition: 0.2s ease-in;
 }
 
-.btn:hover{
-
-    border-width: 5px;
-
+.btn:hover {
+  border-width: 5px;
 }
-
-
-
-
-
 
 /* styling for decleration is here  */
 .decleration h2 {
-
-    text-align: center;
-    padding-bottom: 10px;
-
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .decleration p {
-
-    font-size: 0.94rem;
-    line-height: 1.3rem;
-
+  font-size: 0.94rem;
+  line-height: 1.3rem;
 }
-
-
 
 /* styling for signatures is here  */
 .signatures {
-
-    justify-content: space-between;
-    padding-inline: 50px;
-
+  justify-content: space-between;
+  padding-inline: 50px;
 }
 
 .signatures div {
-
-    width: 24%;
-    border-top: 1px solid black;
-    margin-top: 50px;
-    padding-block: 25px;
-
+  width: 24%;
+  border-top: 1px solid black;
+  margin-top: 50px;
+  padding-block: 25px;
 }
 
 .signatures div p {
-
-    text-align: center;
-
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* styling for id-card is here  */
 .hidden {
-
-    display: none;
-
+  display: none;
 }
 
 .show {
-
-    display: flex;
-
+  display: flex;
 }
-
 
 .id-card {
-
-    justify-content: space-around;
-    margin-block: 100px 20px;
+  justify-content: space-around;
+  margin-block: 100px 20px;
 }
 
-
 /* styling for .card-front is here  */
-.card-front,.card-back{
-
-    width: 35%;
-    border: 2px solid black;
-
+.card-front,
+.card-back {
+  width: 35%;
+  border: 2px solid black;
 }
 
 .card-front-top {
-
-    height: 80px;
-    background-color: var(--color1);
-    color: white;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-
+  height: 80px;
+  background-color: var(--color1);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
-.card-front-logo{
-
-    width: 50px;
-    height: 50px;
-    background-color: var(--color2);
-    border-radius: 50%;
-
+.card-front-logo {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color2);
+  border-radius: 50%;
 }
 
 .card-front-mid {
-
-    margin-block: 101px;
-    background-color: var(--color2);
-    height: 90px;
-    justify-content: center;
-    align-items: center;
-
+  margin-block: 101px;
+  background-color: var(--color2);
+  height: 90px;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-front-img{
-
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 8px solid var(--color1);
-    /* background-color: var(--color1); */
-    background-image: url(./waqas44.jfif);
-    background-size: cover;
-    background-position: center;
-    /* background-repeat: no-repeat; */
-    
-
+.card-front-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 8px solid var(--color1);
+  /* background-color: var(--color1); */
+  background-image: url(./waqas44.jfif);
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
 }
 
-.card-front-details table{
-
-    width: 65%;
-    margin: auto;
-
+.card-front-details table {
+  width: 65%;
+  margin: auto;
 }
 
 /* styling for card-front-bottom is here  */
 .card-front-bottom {
-
-    height: 40px;
-    background-color: var(--color2);
-    border-top: 10px solid var(--color1);
-    margin-top: 20px;
-
+  height: 40px;
+  background-color: var(--color2);
+  border-top: 10px solid var(--color1);
+  margin-top: 20px;
 }
-
-
-
 
 /* styling for card-back is here  */
 .card-back-top {
-
-    height: 80px;
-    background-color: var(--color2);
-    color: white;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-
+  height: 80px;
+  background-color: var(--color2);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
 
-.card-back-logo{
-
-    width: 50px;
-    height: 50px;
-    background-color: var(--color1);
-    border-radius: 50%;
-
+.card-back-logo {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color1);
+  border-radius: 50%;
 }
 
-.card-back-top-layer{
-    
-    height: 40px;
-    border-bottom: 20px solid var(--color1);
-
+.card-back-top-layer {
+  height: 40px;
+  border-bottom: 20px solid var(--color1);
 }
 
 .card-back-details {
-
-    padding:60px 40px;
-
+  padding: 60px 40px;
 }
 
 .card-back-details p {
-
-    padding-bottom: 30px;
-    line-height: 1.9rem;
-
+  padding-bottom: 30px;
+  line-height: 1.9rem;
 }
 
 .card-back-sign {
-
-    width: 230px;
-    margin: auto;
-    border-top: 2px solid black;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.3rem;
-
+  width: 230px;
+  margin: auto;
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.3rem;
 }
 
 /* styling for card-back-bottom is here  */
 .card-back-bottom {
-
-    height: 40px;
-    background-color: var(--color1);
-    border-top: 10px solid var(--color2);
-    margin-top: 20px;
-
+  height: 40px;
+  background-color: var(--color1);
+  border-top: 10px solid var(--color2);
+  margin-top: 20px;
 }
-
-
-
