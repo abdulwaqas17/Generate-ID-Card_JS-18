@@ -5,11 +5,21 @@
   box-sizing: border-box;
   font-family: "Roboto", serifsans-serif;
 }
-/* 
+
 body{
 
-    padding-bottom: 80px;
-} */
+    /* padding-bottom: 80px; */
+    /* overflow: hidden; */
+    width: 100%;
+    height: auto;
+
+}
+
+.addmission-form{
+
+    overflow: hidden;
+
+}
 
 /* dynamic classes  */
 :root {
@@ -351,4 +361,103 @@ legend {
   background-color: var(--color1);
   border-top: 10px solid var(--color2);
   margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* --------- Media Query --------- */
+@media (max-width : 375px) {
+
+    header {
+
+        width: 100%;
+        height: 200px;
+        padding: 30px 0px;
+        justify-content: center;
+        gap: 0px;
+
+    }
+
+    .top-detail{
+
+        display: none;
+
+    }
+
+    main {
+
+        padding: 10px;
+        font-size: 0.95rem;
+
+    }
+
+    .labelTd {
+
+        width: 130px;
+    }
+
+    .birth-gender {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .birth-gender>label {
+
+        width: 300px;
+
+    }
+
+    .birth-gender input {
+
+        /* width: calc(100% - 320px); */
+        margin-left: 10px;
+        width: auto;
+
+    }
+
+    fieldset {
+
+        padding: 30px;
+
+    }
+
+    .general-information td {
+
+        width: 50%;
+        padding-inline: 10px;
+
+    }
+
+    .general-information label {
+
+        /* width: 95px; */
+        display: inline-block;
+        
+    }
+
+    .general-information input {
+
+        width: calc(100%);
+  
+    }
+
+    .general-information .radio label {
+
+        width: 100%;
+        
+    }
+
+    .general-information .radio input {
+
+        width: 10px;
+        /* padding: 0px; */
+        margin-right: 9px;
+        
+    }
 }
