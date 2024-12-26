@@ -47,14 +47,14 @@
                     <tr>
                         
                         <td class="labelTd"><label for="" class="required">Student's Name :</td></label></td>
-                        <td><input type="text" id="stdName"></td>
+                        <td><input type="text" id="stdName" required></td>
 
                     </tr>
 
                     <tr>
 
                         <td class="labelTd"><label for="" class="required">Father's Name :</td></label></td>
-                        <td><input type="text" id="stdFatherName" ></td>
+                        <td><input type="text" id="stdFatherName"  required></td>
 
                     </tr>
 
@@ -195,14 +195,14 @@
                         <td>
 
                             <label for="" class="required">Class :</label>
-                            <input type="text" id="stdClass" >
+                            <input type="text" id="stdClass" required>
 
                         </td>
 
                         <td>
 
                             <label for="" class="required">Student ID :</label>
-                            <input type="text" id="stdId" >
+                            <input type="text" id="stdId" required>
 
                         </td>
 
@@ -242,7 +242,7 @@
                     <tr>
                         <td>
                             <label for="" class="required">Upload Picture : </label>
-                            <input type="file" id="stdPicture" >
+                            <input type="file" id="stdPicture" required>
                         </td>
                     </tr>
 
@@ -326,35 +326,35 @@
                     <tr>
 
                         <td><p>Student Name :</p></td>
-                        <td><p id="showStdName">Muhammad Waqas</p></td>
+                        <td><p id="showStdName"></p></td>
 
                     </tr>
 
                     <tr>
 
                         <td><p>Father Name : </p></td>
-                        <td><p id="showStdFatherName">Abdul Majid</p></td>
+                        <td><p id="showStdFatherName"></p></td>
 
                     </tr>
 
                     <tr>
 
                         <td><p>Student ID : </p></td>
-                        <td><p  id="showStdId">792535</p></td>
+                        <td><p  id="showStdId"></p></td>
 
                     </tr>
 
                     <tr>
 
                         <td><p>Class : </p></td>
-                        <td><p  id="showStdClass">Web App Development</p></td>
+                        <td><p  id="showStdClass"></p></td>
 
                     </tr>
 
                     <tr>
 
                         <td><p>Section : </p></td>
-                        <td><p  id="showStdSection">12</p></td>
+                        <td><p  id="showStdSection"></p></td>
 
                     </tr>
 
@@ -410,8 +410,10 @@
 
         </div>
     </div>
+    <button class="downloadBtn hidden" onclick="downloadIDCard()">Download ID Card</button>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
     <script src="app.js"></script>
 </body>
 </html>

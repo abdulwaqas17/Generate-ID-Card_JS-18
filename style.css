@@ -256,7 +256,8 @@ legend {
 
 .id-card {
   justify-content: space-around;
-  margin-block: 100px 20px;
+  padding-block: 80px;
+  flex-wrap: wrap;
 }
 
 /* styling for .card-front is here  */
@@ -296,7 +297,7 @@ legend {
   border-radius: 50%;
   border: 8px solid var(--color1);
   /* background-color: var(--color1); */
-  background-image: url(./waqas44.jfif);
+  /* background-image: url(./waqas44.jfif); */
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
@@ -363,7 +364,19 @@ legend {
   margin-top: 20px;
 }
 
+.downloadBtn {
+  margin:  auto;
 
+  background: var(--color2);
+  color: white;
+  border: 5px solid var(--color1);
+  border-radius: 5px ;
+  padding: 10px 15px ;
+  font-size: 1.2rem;
+  margin-bottom: 70px;
+  cursor: pointer;
+
+}
 
 
 
@@ -460,4 +473,17 @@ legend {
         margin-right: 9px;
         
     }
+
+    .id-card {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .card-front,
+.card-back {
+  width: 85%;
+  border: 2px solid black;
+}
 }

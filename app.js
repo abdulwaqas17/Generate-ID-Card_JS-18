@@ -1,12 +1,18 @@
-function submitData() {
-  let stdName = document.getElementById("stdName").value;
-  let stdFatherName = document.getElementById("stdFatherName").value;
-  let stdClass = document.getElementById("stdClass").value;
-  let stdId = document.getElementById("stdId").value;
-  let stdSection = document.getElementById("stdSection").value;
-  let stdPicture = document.getElementById("stdPicture").files[0]; // Get the file object
 
-  console.log("pic =", stdPicture);
+function submitData() {
+
+  var stdName = document.getElementById("stdName").value;
+var stdFatherName = document.getElementById("stdFatherName").value;
+var stdClass = document.getElementById("stdClass").value;
+var stdId = document.getElementById("stdId").value;
+var stdSection = document.getElementById("stdSection").value;
+var stdPicture = document.getElementById("stdPicture").files[0]; // Get the file object
+
+
+
+  if(stdName && stdFatherName && stdClass && stdId && stdSection && stdPicture){
+
+    console.log("pic =", stdPicture);
 
   // Save other data to localStorage
   window.localStorage.setItem("stdName", stdName);
@@ -40,10 +46,49 @@ function submitData() {
     "stdPicture"
   )})`;
 
+  alert('Now You Can Generate the ID Card')
+
+  } else {
+    alert('Kindly Fill Required Details')
+  }
+ 
+
+  
+
   // Optional: Alert message
   // alert('Your Form has been submitted, Now generate the ID Card');
 }
 
+
+
+
+
+
+
+
+
+
+
 function showCard() {
-  document.querySelector(".id-card").className += " show";
+
+  if(window.localStorage.getItem('stdName')){
+    document.querySelector(".id-card").className += " show";
+    document.querySelector(".downloadBtn").className += " show";
+
+  } else {
+    alert('Kindly Submit Details First')
+  }
+  
 }
+
+
+
+// for download id card 
+ function downloadIDCard() {
+    html2canvas(document.querySelector(".id-card")).then(canvas => {
+      let link = document.createElement("a");
+      link.download = "id_card.png";
+      link.href = canvas.toDataURL("image/png");
+      link.click();
+    });
+  }
